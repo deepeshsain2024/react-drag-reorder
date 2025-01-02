@@ -10,6 +10,7 @@ class DraggableChildComponent extends React.Component {
 				onDragEnter={this.props.dragEnter}
 				onDragEnd={this.props.dragEnd}
 				className="grabbable"
+				style={this.props.style}
 			>
 				{this.props.children}
 			</div>

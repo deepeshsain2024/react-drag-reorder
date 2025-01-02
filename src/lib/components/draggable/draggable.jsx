@@ -52,6 +52,7 @@ class DraggableComponent extends Component {
           dragEnter={() => this.dragEnter(i)}
           dragEnd={this.dragDrop}
           key={i}
+          style={this.props.style}
         >
           {this.state.divs[i]}
         </DraggableChildComponent>
