@@ -70,7 +70,7 @@ class DraggableComponent extends Component {
 
     for (let i = 0; i < this.state.divs.length; i++) {
       ele.push( /*#__PURE__*/React.createElement(DraggableChildComponent, {
-        style: this.props.style
+        style: this.props.style,
         dragStart: () => this.dragStart(i),
         dragEnter: () => this.dragEnter(i),
         dragEnd: this.dragDrop,
